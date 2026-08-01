@@ -4,71 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Inspiration</title>
+
+    <title>QuoteVerse | Daily Inspiration</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:,">
 
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
+<header>
+    <h1>🌿 QuoteVerse</h1>
+    <p>
+        One positive thought can change your entire day.
+    </p>
+</header>
 
-        <h1>🌿 Random Quote Generator</h1>
 
-        <p class="tagline">
-            One positive thought can change your entire day.
-        </p>
+<main class="container">
 
-        <div id="quoteCard">
+    <section id="quoteCard">
 
-            <div class="overlay"></div>
+        <div class="overlay"></div>
 
-            <div class="content">
+        <article class="content">
 
-                <p id="quote">
-                    Loading Inspiration...
-                </p>
+            <p id="quote">
+                "Loading Inspiration..."
+            </p>
 
-                <h3 id="author"></h3>
+            <h3 id="author">
+                
+            </h3>
 
-                <small class="credit">
-                   Created by our Team!
-                </small>
-
-            </div>
-
-        </div>
-
-        <p id="counter">
-            Quotes Viewed: 0
-        </p>
-
-        <div class="buttons">
-
-            <button onclick="showQuote()">
-                ✨Inspire Me!
+            <button id="favoriteBtn" aria-label="Add to favorites">
+                🤍
             </button>
 
-            <button onclick="downloadCard()">
-                📥 Download
-            </button>
+        </article>
 
-            <button onclick="shareImage()">
-                📱 Share
-            </button>
+    </section>
 
-        </div>
+
+    <p id="counter">
+        Quotes Viewed: 0
+    </p>
+
+
+    <div class="buttons">
+
+        <button id="newQuoteBtn" type="button">
+            ✨ Inspire Me
+        </button>
+
+        <button id="downloadBtn" type="button">
+            📥 Download
+        </button>
+
+        <button id="shareBtn" type="button">
+            📱 Share
+        </button>
 
     </div>
 
-    <footer>
-        © 2026 Mini Project
-    </footer>
 
-    <script src="script.js"></script>
+</main>
+
+
+<footer>
+    © 2026 QuoteVerse | Created with ❤️
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 
