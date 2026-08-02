@@ -1,0 +1,51 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:linear-gradient(135deg,#d4fc79,#96e6a1)
+}
+header{text-align:center;margin-bottom:20px}
+h1{color:#1b5e20;margin-bottom:8px}
+.container{
+text-align:center;
+background:rgba(255,255,255,.25);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15)
+}
+#quoteCard{
+width:360px;height:480px;position:relative;margin:auto;
+overflow:hidden;border-radius:20px;
+background:#5c6bc0 center/cover no-repeat;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+transition:.3s
+}
+#quoteCard:hover{transform:translateY(-5px)}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.35)}
+.content{
+position:relative;z-index:2;height:100%;
+display:flex;flex-direction:column;justify-content:center;
+padding:30px;color:#fff
+}
+#quote{font-size:24px;line-height:1.5}
+#author{margin-top:20px;font-size:18px}
+#counter{margin:20px 0;font-weight:bold}
+button{
+padding:12px 20px;margin:6px;border:none;
+border-radius:25px;cursor:pointer;
+background:#2e7d32;color:#fff;font-size:15px;
+transition:.3s
+}
+button:hover{background:#1b5e20;transform:translateY(-2px)}
+footer{margin-top:20px;color:#555}
+@media(max-width:450px){
+.container{padding:18px}
+#quoteCard{width:90vw;height:450px}
+#quote{font-size:20px}
+}
