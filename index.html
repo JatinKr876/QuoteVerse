@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QuoteVerse | Daily Inspiration</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuoteVerse | Daily Inspiration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
+
 <body>
 
 <header>
-    <h1>🌿 Random Quote Generator</h1>
-    <p>One positive thought can change your entire day.</p>
+    <h1>🌿 QuoteVerse</h1>
+    <p>
+        One positive thought can change your entire day.
+    </p>
 </header>
 
+
 <main class="container">
+
     <section id="quoteCard">
+
         <div class="overlay"></div>
+
         <article class="content">
-            <p id="quote">Loading Inspiration...</p>
-            <h3 id="author"></h3>
+
+            <p id="quote">
+                "Loading Inspiration..."
+            </p>
+
+            <h3 id="author">
+                
+            </h3>
+
+            <button id="favoriteBtn" aria-label="Add to favorites">
+                🤍
+            </button>
+
         </article>
+
     </section>
 
-    <p id="counter">Quotes Viewed: 0</p>
 
-    <div class="buttons">
-        <button id="newQuoteBtn">✨ Inspire Me</button>
-        <button id="downloadBtn">📥 Download</button>
-        <button id="shareBtn">📱 Share</button>
+    <p id="counter">
+        Quotes Viewed: 0
+    </p>
+
+
+    
+
+        <div class="buttons">
+
+    <div class="quote-wheel" id="newQuoteBtn">
+
+        <div class="outer-ring">
+
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+            <div class="center-circle">
+                ✨
+            </div>
+
+        </div>
+
     </div>
+
+    <button id="downloadBtn">
+        📥 Download
+    </button>
+
+    <button id="shareBtn">
+        📱 Share
+    </button>
+
+</div>
+
+        
+
+
 </main>
 
-<footer>© 2026 QuoteVerse | Created with ❤️</footer>
+
+<footer>
+    © 2026 QuoteVerse | Created with ❤️
+</footer>
+
 
 <script src="script.js"></script>
+
 </body>
+
 </html>
